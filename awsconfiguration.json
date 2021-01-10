@@ -1,0 +1,31 @@
+{
+    "UserAgent": "aws-amplify/cli",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://xxxxxxxx.appsync-api.ap-northeast-2.amazonaws.com/graphql",
+            "Region": "ap-northeast-2",
+            "AuthMode": "AWS_IAM",
+            "ClientDatabasePrefix": "todo_AWS_IAM"
+        }
+    },
+    "CredentialsProvider": {
+      "CognitoIdentity": {
+        "Default": {
+          "PoolId": "ap-northeast-2:xxxxxxxx",
+          "Region": "ap-northeast-2"
+        }
+      }
+    },
+    "CognitoUserPool": {
+      "Default": {
+        "AppClientSecret": "xxxxxxx",
+        "AppClientId": "xxxxxxx",
+        "PoolId": "ap-northeast-xxxxxxx",
+        "Region": "ap-northeast-2"
+      }
+    }
+}
